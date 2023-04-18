@@ -3,7 +3,7 @@
     <div class="row g-3">
         <div class="col">
             <input type="text" name="quantidade_pessoas" class="form-control" placeholder="Quantidade de pessoas"
-                [(ngModel)]="quantidade_pessoas" required />
+                [(ngModel)]="residente" required />
         </div>
         <div class="col">
             <input type="text" name="quantidade_comodos" class="form-control" placeholder="Quantidade de cômodos"
@@ -16,18 +16,18 @@
     <div class="row g-3">
         <div class="col">
             <label class="visually-hidden" for="maquina_lavar_roupa">Preference</label>
-            <select class="form-select" name="maquina_lavar_roupa" [(ngModel)]="maquina_lavar_roupa" required >
+            <select class="form-select" name="maquina_lavar_roupa" [(ngModel)]="maquina_lavar_roupa" >
                 <option selected>Máquina de lavar roupa</option>
-                <option value="0">Não</option>
-                <option value="1">Sim</option>
+                <option value="false">Não</option>
+                <option value="true">Sim</option>
             </select>
         </div>
         <div class="col">
             <label class="visually-hidden" for="secadora_roupas">Preference</label>
-            <select class="form-select" name="secadora_roupas" [(ngModel)]="secadora_roupas" required>
+            <select class="form-select" name="secadora_roupas"  placeholder="Secadora de roupas" [(ngModel)]="secadora_roupas" >
                 <option selected>Secadora de roupas</option>
-                <option value="0">Não</option>
-                <option value="1">Sim</option>
+                <option value="false">Não</option>
+                <option value="true">Sim</option>
             </select>
         </div>
     </div>
@@ -44,8 +44,8 @@
         </div>
     </div>
     <div class="col-md-2">
-        <label for="tarifa_energetica" class="form-label" placeholder="Tarifa"></label>
-        <input type="number" name="tarifa_energetica" class="form-control" [(ngModel)]="tarifa_energetica" required />
+        <label for="tarifa_energetica" class="form-label" placeholder="Tarifa"><h5>Tarifa</h5></label>
+        <input type="text" name="tarifa_energetica" class="form-control" [(ngModel)]="tarifa_energetica" required />
     </div>
     <div><br>
         <button class="btn btn-success" (click)="validateInputs()">Calcular</button>
