@@ -93,16 +93,16 @@
             "scripts": []
           }
         },
-       "deploy": {
+        "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/-Valor_Energetico/"
           }
+        }
       }
+    },
+    "cli": {
+      "analytics": "a774fb3d-53e7-4182-9f2b-63fd17a16f3b"
     }
-  },
-  "cli": {
-    "analytics": "a774fb3d-53e7-4182-9f2b-63fd17a16f3b"
   }
-}
 }
