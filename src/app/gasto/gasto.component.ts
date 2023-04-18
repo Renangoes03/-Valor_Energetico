@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class GastoComponent {
 
+quantidade_pessoas : number = 0;
+
+
+
 }

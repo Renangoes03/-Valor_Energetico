@@ -1,0 +1,11 @@
+.container{
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    
+}
+.container{
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+}
